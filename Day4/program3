@@ -1,0 +1,10 @@
+dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+f_max =0 # variable to store first maximum value
+s_max=0 # variable to store second maximum value
+for value in dict.values():
+    if (f_max< value):
+        f_max= value
+for value in dict.values():
+    if(value>s_max and value<f_max):
+        s_max=value
+print("the second maximum value in given dictionary is:",s_max)
