@@ -1,0 +1,11 @@
+tuple=list()# converting tuple into list
+size=int(input("enter the size"))
+for i in range(size):# loop to enter elements
+    element=input("enter elements")
+    tuple.append(element)
+a=input("enter the element you want to count")
+n=0 #variable to store number of occurence of variable
+for j in tuple: # loop to count number of occurence
+    if j==a:
+        n=n+1
+print(a,"occurs",n,"times in a entered tuple")
