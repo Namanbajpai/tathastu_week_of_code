@@ -1,0 +1,7 @@
+# wap to remove duplicate dictionary values
+dict1 = {'a': 1, 'b': 2, 'c': 4, 'd': 4,'e':'5','f':'5'}
+dict2={} #empty dictionary used to store original dictionary without duplicate values
+for key,value in dict1.items():
+    if value not in dict2.values():
+        dict2[key]=value
+print(dict2)
