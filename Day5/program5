@@ -1,0 +1,14 @@
+list=[1,7,4,10,9,34,46,59,93]
+list_even=[] # list to contain even element of above list
+list_odd=[] # list to contain odd element of above list
+for i in list: # loop to find even,odd element
+    if i%2==0:
+        list_even.append(i)
+    else:
+        list_odd.append(i)
+list_odd.sort(reverse=True)
+list_even.sort()
+print("even numbers in above list are:",list_even)
+print("odd numbets in above list are",list_odd)
+list=list_odd+list_even
+print(list)
